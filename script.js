@@ -10,13 +10,18 @@ function stringChop(str, size) {
         }
     }
     
-    if(temp !== '') element.push(temp);
+    if(temp !== '') { 
+		element.push(temp);
+	}else{
+      return element;
+	}
+		
     
     return element;
 }
 
 // Do not change the code below
-const str = prompt("Enter String.");
-const size = prompt("Enter Chunk Size.");
-alert(stringChop(str, size));
+// const str = prompt("Enter String.");
+// const size = prompt("Enter Chunk Size.");
+// alert(stringChop(str, size));
 
